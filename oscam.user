@@ -1,0 +1,25 @@
+# oscam.user #
+# Read more: http://www.streamboard.tv/svn/oscam/trunk/Distribution/doc/example/oscam.user
+
+[account]
+user                          = dvbapiau
+pwd                           = 
+group                         = 1,2,3,4
+uniq                          = 3
+au                            = 1
+betatunnel                    = 1833.FFFF:1702
+cccmaxhops                    = 15
+cccreshare                    = 15
+cccignorereshare              = 1
+
+[account]
+user                          = usermonitor
+pwd                           = password
+group                         = 1,2,3,4
+uniq                          = 1
+monlevel                      = 4
+
+
+
+
+								

@@ -1,0 +1,119 @@
+# oscam.server #
+# Read more: http://www.streamboard.tv/svn/oscam/trunk/Distribution/doc/example/oscam.server
+
+[reader]
+label                         = orf
+protocol                      = constcw
+device                        = /usr/keys/SoftCam.Keys
+caid                          = 1801,0D05,0500,0100
+group                         = 3
+
+[reader]
+label                         = v13
+protocol                      = internal
+device                        = /dev/sci0
+caid                          = 09C4
+boxid                         = 12345678
+ins7e11                       = 12
+detect                        = cd
+mhz                           = 368
+cardmhz                       = 368
+group                         = 1
+emmcache                      = 1,3,2
+
+[reader]
+label                         = v14
+enable                        = 0
+protocol                      = internal
+device                        = /dev/sci0
+caid                          = 098C
+boxid                         = 12345678
+detect                        = cd
+mhz                           = 357
+cardmhz                       = 357
+group                         = 1
+emmcache                      = 1,3,2
+
+[reader]
+label                         = hdpluswhite
+enable                        = 0
+protocol                      = internal
+device                        = /dev/sci0
+caid                          = 1830
+boxid                         = 12345678
+detect                        = cd
+mhz                           = 368
+cardmhz                       = 368
+group                         = 1
+emmcache                      = 1,3,2
+
+[reader]
+label                         = orf
+enable                        = 0
+protocol                      = internal
+device                        = /dev/sci0
+caid                          = 0D05
+detect                        = cd
+group                         = 1
+emmcache                      = 1,3,2
+deprecated                    = 1
+
+[reader]
+label                         = s02
+enable                        = 0
+protocol                      = internal
+device                        = /dev/sci0
+caid                          = 1702
+detect                        = cd
+mhz                           = 600
+cardmhz                       = 600
+group                         = 1
+emmcache                      = 1,3,2
+
+[reader]
+label                         = srg
+enable                        = 0
+protocol                      = internal
+device                        = /dev/sci0
+caid                          = 0500
+detect                        = cd
+group                         = 1
+emmcache                      = 1,3,2
+
+[reader]
+label                         = hdplusblack
+enable                        = 0
+protocol                      = internal
+device                        = /dev/sci0
+caid                          = 1843
+boxid                         = 12345678
+detect                        = cd
+mhz                           = 357
+cardmhz                       = 368
+group                         = 1
+emmcache                      = 1,3,2
+
+[reader]
+label                         = g02
+enable                        = 0
+protocol                      = internal
+device                        = /dev/sci0
+caid                          = 09C7
+boxid                         = 12345678
+boxkey                        = 1122334455667788
+detect                        = cd
+mhz                           = 369
+cardmhz                       = 369
+group                         = 1
+emmcache                      = 1,3,2
+
+[reader]
+label                         = toremote
+enable                        = 0
+protocol                      = camd35
+device                        = hostname or ip
+user                          = giga
+password                      = blue
+reconnecttimeout              = 120
+group                         = 1
+
