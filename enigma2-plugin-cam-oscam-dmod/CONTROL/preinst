@@ -1,0 +1,47 @@
+#!/bin/sh
+
+if [ ! -f /etc/init.d/softcam.None ]; then
+
+	touch /etc/init.d/softcam.None
+
+fi
+
+if [ ! -f /etc/init.d/cardserver.None ]; then
+
+	touch /etc/init.d/cardserver.None	
+
+fi
+
+if [ ! -f /etc/init.d/softcam ]; then
+
+	ln -sf /etc/init.d/softcam.None /etc/init.d/softcam
+
+else    /etc/init.d/softcam stop
+	sleep 3
+
+fi
+
+if [ ! -f /etc/init.d/cardserver ]; then
+
+	ln -sf /etc/init.d/cardserver.None /etc/init.d/cardserver
+
+else    /etc/init.d/cardserver stop
+	sleep 3
+
+fi
+
+if [ ! -f /etc/rc3.d/S*cardserver ]; then 
+
+	update-rc.d cardserver defaults
+
+fi
+
+if [ ! -f /etc/rc3.d/S*softcam ]; then
+
+	update-rc.d softcam defaults
+
+fi
+
+
+echo "Installation beginnt ..."
+

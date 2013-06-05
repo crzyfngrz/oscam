@@ -1,0 +1,16 @@
+/etc/tuxbox/config/oscam_Dmod/oscam.ac
+/etc/tuxbox/config/oscam_Dmod/oscam.cacheex
+/etc/tuxbox/config/oscam_Dmod/oscam.cert
+/etc/tuxbox/config/oscam_Dmod/oscam.conf
+/etc/tuxbox/config/oscam_Dmod/oscam.dvbapi
+/etc/tuxbox/config/oscam_Dmod/oscam.guess
+/etc/tuxbox/config/oscam_Dmod/oscam.ird
+/etc/tuxbox/config/oscam_Dmod/oscam.pem
+/etc/tuxbox/config/oscam_Dmod/oscam.provid
+/etc/tuxbox/config/oscam_Dmod/oscam.server
+/etc/tuxbox/config/oscam_Dmod/oscam.services
+/etc/tuxbox/config/oscam_Dmod/oscam.srvid
+/etc/tuxbox/config/oscam_Dmod/oscam.tiers
+/etc/tuxbox/config/oscam_Dmod/oscam.user
+/etc/tuxbox/config/oscam_Dmod/oscam.whitelist
+/usr/bin/oscam_Dmod

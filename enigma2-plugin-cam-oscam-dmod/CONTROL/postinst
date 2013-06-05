@@ -1,0 +1,17 @@
+#!/bin/sh
+
+
+echo "*************************************"
+echo "*  Oscam Mod deppOn installiert,    *"
+echo "* verpackt von gigablue-support.net *"
+if [ ! -f /usr/keys/SoftCam.Keys ]; then
+echo "* Sie müssen noch eine SoftCam.Keys *"
+echo "*  ins Verzeichnis /usr/keys laden  *"
+echo "*      dann kann die Cam im         *"
+else
+echo "*       die Cam kann nun im         *"
+fi
+echo "* CI/Softcam-Menue gestartet werden *"
+echo "*************************************"
+
+exit 0
