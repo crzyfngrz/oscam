@@ -5,7 +5,8 @@
 label                         = orf
 protocol                      = constcw
 device                        = /usr/keys/SoftCam.Keys
-caid                          = 1801,0D05,0500,0100
+caid                          = 0D05
+ident                         = 0D05:000004,000010,000000
 group                         = 3
 
 [reader]
