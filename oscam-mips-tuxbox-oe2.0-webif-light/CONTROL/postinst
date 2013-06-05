@@ -1,0 +1,7 @@
+#!/bin/sh
+echo "*************************************"
+echo "* Oscam light installiert!          *"
+echo "* Oscam light kann nun im           *"
+echo "* CI/Softcam-Menue gestartet werden *"
+echo "*************************************"
+exit 0

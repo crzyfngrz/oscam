@@ -1,0 +1,8 @@
+#!/bin/sh
+echo "Deinstalliere oscam_libusb ..."
+/etc/init.d/cardserver stop
+/etc/init.d/softcam stop
+sleep 5
+ln -sf /etc/init.d/softcam.None /etc/init.d/softcam
+ln -sf /etc/init.d/cardserver.None /etc/init.d/cardserver
+exit 0

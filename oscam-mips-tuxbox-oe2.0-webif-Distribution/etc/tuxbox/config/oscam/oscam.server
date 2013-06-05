@@ -1,0 +1,117 @@
+# oscam.server #
+
+[reader]
+label                         = V13
+enable                        = 1
+protocol                      = internal
+device                        = /dev/sci0
+key                           = 0102030405060708091011121314
+caid                          = 09C4
+boxid                         = 12345678
+ins7e11                       = 13
+detect                        = cd
+mhz                           = 368
+cardmhz                       = 368
+ident                         = 09C4:000000
+group                         = 1
+emmcache                      = 1,1,2
+
+[reader]
+label                         = V14
+enable                        = 0
+protocol                      = internal
+device                        = /dev/sci0
+caid                          = 098C
+boxid                         = 12345678
+detect                        = cd
+mhz                           = 357
+cardmhz                       = 357
+group                         = 1
+emmcache                      = 1,3,2
+
+[reader]
+label                         = S02
+enable                        = 0
+protocol                      = internal
+device                        = /dev/sci0
+caid                          = 1702
+detect                        = cd
+mhz                           = 600
+cardmhz                       = 600
+group                         = 1
+emmcache                      = 1,3,2
+
+[reader]
+label                         = G02
+enable                        = 0
+protocol                      = internal
+device                        = /dev/sci0
+caid                          = 09C7
+boxid                         = 12345678
+boxkey                        = 1122334455667788
+detect                        = cd
+mhz                           = 369
+cardmhz                       = 369
+group                         = 1
+emmcache                      = 1,3,2
+
+[reader]
+label                         = hdpluswhite
+enable                        = 0
+protocol                      = internal
+device                        = /dev/sci0
+caid                          = 1830
+boxid                         = 12345678
+detect                        = cd
+mhz                           = 368
+cardmhz                       = 368
+group                         = 1
+emmcache                      = 1,3,2
+
+[reader]
+label                         = hdplusblack
+enable                        = 0
+protocol                      = internal
+device                        = /dev/sci0
+caid                          = 1843
+boxid                         = 12345678
+detect                        = cd
+mhz                           = 357
+cardmhz                       = 368
+group                         = 1
+emmcache                      = 1,3,2
+
+[reader]
+label                         = ORF
+enable                        = 0
+protocol                      = internal
+device                        = /dev/sci0
+caid                          = 0D05
+detect                        = cd
+mhz                           = 357
+cardmhz                       = 357
+group                         = 1
+emmcache                      = 1,3,2
+deprecated                    = 1
+
+[reader]
+label                         = SRG
+enable                        = 0
+protocol                      = internal
+device                        = /dev/sci0
+caid                          = 0500
+detect                        = cd
+mhz                           = 357
+cardmhz                       = 357
+group                         = 1
+emmcache                      = 1,3,2
+
+[reader]
+label                         = toremote
+enable                        = 0
+protocol                      = camd35
+device                        = hostname or ip
+user                          = giga
+password                      = blue
+reconnecttimeout              = 120
+group                         = 1

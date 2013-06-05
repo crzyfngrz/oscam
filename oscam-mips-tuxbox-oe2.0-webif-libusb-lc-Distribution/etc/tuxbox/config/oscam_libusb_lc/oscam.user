@@ -1,0 +1,19 @@
+# oscam.user #
+
+[account]
+user                          = dvbapiau
+uniq                          = 3
+au                            = 1
+betatunnel                    = 1833.FFFF:1702
+group                         = 1,2,3,4
+cccmaxhops                    = 15
+cccreshare                    = 15
+cccignorereshare              = 1
+
+[account]
+user                          = usermonitor
+pwd                           = pasword
+uniq                          = 1
+monlevel                      = 4
+group                         = 1,2,3,4
+

@@ -1,0 +1,17 @@
+#!/bin/sh
+
+echo "Stoppe Softcams und Cardserver..."
+/etc/init.d/softcam stop
+/etc/init.d/cardserver stop
+	SOFTCAMLINK=`readlink -f /etc/init.d/softcam`
+	CARDSERVERLINK=`readlink -f /etc/init.d/cardserver
+	if [ "${SOFTCAMLINK}" == "/etc/init.d/softcam.oscam_libusb_lc" ]
+	then
+		ln -sf /etc/init.d/softcam.None /etc/init.d/softcam
+	fi
+	CARDSERVERLINK=`readlink -f /etc/init.d/cardserver
+	if [ "${SOFTCAMLINK}" == "/etc/init.d/cardserver.oscam_libusb_lc" ]
+	then
+		ln -sf /etc/init.d/cardserver.None /etc/init.d/cardserver
+	fi
+

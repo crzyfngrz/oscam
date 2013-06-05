@@ -1,0 +1,10 @@
+Package: enigma2-plugin-cam-oscam
+Version: SVN8679
+Description: Oscam V13 V14 S02 G02 HD+ SRG ORF
+Section: misc
+Architecture: all
+Priority: optional
+Maintainer: gigabluesupport.org arn354
+Homepage: 
+Depends: enigma2
+Source: 

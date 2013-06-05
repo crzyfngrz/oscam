@@ -1,0 +1,10 @@
+Package: enigma2-plugin-cam-oscam-libusb-lc
+Version: SVN8679
+Description: Oscam libusb V13 V14 S02 G02 HD+ SRG ORF
+Section: misc
+Architecture: all
+Priority: optional
+Maintainer: gigabluesupport.org arn354
+Homepage: 
+Depends: enigma2, libusb-1.0-0
+Source: 

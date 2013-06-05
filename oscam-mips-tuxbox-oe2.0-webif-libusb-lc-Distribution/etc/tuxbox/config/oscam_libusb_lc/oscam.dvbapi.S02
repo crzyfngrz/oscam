@@ -1,0 +1,175 @@
+# oscam.dvbapi #
+
+# types:
+#	P - Priority
+#		format:
+#			P: <caid>:[<provider>]:[<srvid>]:[<ecmpid>]
+#	I - Ignore
+#		format:
+#			I: <caid>:[<provider>]:[<srvid>]:[<ecmpid>]
+#	M - Map
+#		format:
+#			M: <caid>:[<provider>]:[<srvid>]:[<ecmpid>] <target caid>:[<target provider>]
+#	D - Delay
+#		format:
+#			D: <caid>:[<provider>]:[<srvid>]:[<ecmpid>] <delay (ms)>
+#
+#
+#
+#p: 0500:023800			# prioritize 0500 with provider 023800
+#P: 1830				# prioritize ecm stream with pid 1BCD on any channel
+#P: 1702				# prioritize 1722
+#P: 1830::EF75				# prioritize 1830 on channel EF75 only
+#M: 1830		1830:003411	# map caid 1830 always to provider 003411
+#D: 1702		200		# wait 200ms before writing cw on caid 1702
+#I: :002000				# ignore provider 002000 on every channel
+#I: 0					# ignore every caid that was not handled before
+
+##########  Sky Film  #################
+P: 1702::0008 # Sky Comedy||Sky Film
+P: 1702::0009 # Sky Action||Sky Film
+P: 1702::000A # Sky Cinema||Sky Film
+P: 1702::000B # Sky Cinema +1||Sky Film
+P: 1702::002B # Sky Cinema +24||Sky Film
+P: 1702::0014 # Sky Emotion||Sky Film
+P: 1702::0019 # Disney Cinemagic||Sky Film
+P: 1702::0029 # Sky Cinema Hits||Sky Film
+P: 1702::0203 # MGM||Sky Film
+P: 1702::0204 # Sky Nostalgie||Sky Film
+##########  Sky Film HD  #################
+P: 1702::006A # Sky Action HD||Sky Film HD
+P: 1702::006B # Sky Cinema Hits HD||Sky Film HD
+P: 1702::006F # Disney Cinemagic HD||Sky Film HD
+P: 1702::0083 # Sky Cinema HD||Sky Film HD
+P: 1702::006E # Sky Atlantic HD||Sky Film HD
+##########  Sky Welt  #################
+P: 1702::000C # NatGeo Wild||Sky Welt
+P: 1702::000D # National Geographic||Sky Welt
+P: 1702::000E # Discovery Channel||Sky Welt
+P: 1702::0010 # Fox Serie||Sky Welt
+P: 1702::0013 # Junior||Sky Welt
+P: 1702::0015 # Beate-Uhse.||Sky Welt
+P: 1702::0016 # Heimatkanal||Sky Welt
+P: 1702::0017 # Sky Krimi||Sky Welt
+P: 1702::0018 # Unitel Classica||Sky Welt
+P: 1702::001A # Disney Junior||Sky Welt
+P: 1702::001B # RTL Crime||Sky Welt
+P: 1702::001C # Disney XD||Sky Welt
+P: 1702::001D # RTL Passion||Sky Welt
+P: 1702::0022 # Disney Channel||Sky Welt
+P: 1702::0024 # Syfy||Sky Welt
+P: 1702::002A # 13th Street Universal||Sky Welt
+P: 1702::0032 # TNT Serie||Sky Welt
+P: 1702::0034 # Spiegel Geschichte||Sky Welt
+P: 1702::00A8 # Motorvision ||Sky Welt
+P: 1702::0206 # Goldstar ||Sky Welt
+##########  Sky Welt HD  #################
+P: 1702::0070 # NatGeo HD||Sky Welt HD
+P: 1702::0071 # History HD||Sky Welt HD
+P: 1702::0082 # Discovery Channel HD||Sky Welt HD
+P: 1702::0084 # Eurosport HD||Sky Welt HD
+P: 1702::007C # FOX HD||Sky Welt HD
+P: 1702::0076 # Nat Geo Wild HD||Sky Welt HD
+P: 1702::0074 # Disney Channel HD||Sky Welt HD
+P: 1702::6FB8 # M Live HD||Sky Welt HD
+P: 1702::6FB9 # M Live HD||Sky Welt HD
+P: 1702::007B # TNT Serie HD||Sky Welt HD
+P: 1702::007D # AXN HD||Sky Welt HD
+P: 1702::007F # 13th Street HD||Sky Welt HD
+P: 1702::007E # Syfy HD||Sky Welt HD
+P: 1702::0075 # Sky 3D||Sky 3D
+##########  Sky Welt Extra  #################
+P: 1702::0021 # Kinowelt ||Sky Welt Extra
+P: 1702::0023 # TNT Film (TCM)||Sky Welt Extra
+P: 1702::0025 # AXN Action||Sky Welt Extra
+P: 1702::0026 # Romance ||Sky Welt Extra
+P: 1702::0038 # Boomerang||Sky Welt Extra
+P: 1702::003A # History||Sky Welt Extra
+P: 1702::3331 # ESPN America (S)||Sky Welt Extra
+P: 1702::3335 # ESPN America||Sky Welt Extra
+P: 1702::07FF # Animax||Sky Welt Extra
+P: 1702::0027 # Cartoon Network (S)||Sky Welt Extra
+P: 1702::0037 # Eurosport 2||Sky Welt Extra
+P: 1702::2EFE # RTL Living||Sky Welt Extra
+P: 1702::0039 # Biography Channel||Sky Welt Extra
+P: 1702::4461 # Sat.1 emotions||Sky Welt Extra
+P: 1702::4462 # Kabel1 Classics||Sky Welt Extra
+P: 1702::7001 # M Germany||Sky Welt Extra
+P: 1702::7009 # M Entertainment (S)||Sky Welt Extra
+P: 1702::700A # Nicktoons (S)||Sky Welt Extra
+##########  Sky Sport  #################
+P: 1702::0011 # Sky Sport News||Sky Sport
+P: 1702::001E # Sky Sport Austria||Sky Sport
+P: 1702::00DD # Sky Sport 1||Sky Sport
+P: 1702::00DE # Sky Sport 2||Sky Sport
+P: 1702::00FD # Sky Sport 3||Sky Sport
+P: 1702::0107 # Sky Sport 10||Sky Sport
+P: 1702::0111 # Sky Sport 11||Sky Sport
+P: 1702::011B # Sky Sport 9||Sky Sport
+P: 1702::0125 # Sky Sport 8||Sky Sport
+P: 1702::012F # Sky Sport 7 / F1 Multisignal||Sky Sport
+P: 1702::0139 # Sky Sport 6 / F1 Highlights||Sky Sport
+P: 1702::0143 # Sky Sport 5 / F1 Daten||Sky Sport
+P: 1702::014D # Sky Sport 4 / F1 Cockpit||Sky Sport
+P: 1702::016B # Sky Sport 12||Sky Sport
+P: 1702::0175 # Sky Sport 13||Sky Sport
+##########  Sky Sport HD  #################
+P: 1702::0069 # Sky Sport HD Extra||Sky Sport HD
+P: 1702::006C # Sky Sport News HD||Sky Sport HD
+P: 1702::0072 # Sky Sport HD 2||Sky Sport HD
+P: 1702::0077 # ESPN America HD||Sky Sport HD
+P: 1702::0081 # Sky Sport HD 1||Sky Sport HD
+P: 1702::007A # Sport1+ HD||Sky Sport HD
+##########  Sky Bundesliga  #################
+P: 1702::00DF # Sky Bundesliga||Sky Bundesliga
+P: 1702::0106 # Sky Bundesliga 1||Sky Bundesliga
+P: 1702::0110 # Sky Bundesliga 2||Sky Bundesliga
+P: 1702::011A # Sky Bundesliga 3||Sky Bundesliga
+P: 1702::0124 # Sky Bundesliga 4||Sky Bundesliga
+P: 1702::012E # Sky Bundesliga 5||Sky Bundesliga
+P: 1702::0138 # Sky Bundesliga 6||Sky Bundesliga
+P: 1702::0142 # Sky Bundesliga 7||Sky Bundesliga
+P: 1702::014C # Sky Bundesliga 8||Sky Bundesliga
+P: 1702::0156 # Sky Bundesliga 9||Sky Bundesliga
+P: 1702::0160 # Sky Bundesliga 10||Sky Bundesliga
+P: 1702::00FC # Sky Bundesliga 11||Sky Bundesliga
+##########  Sky Select  #################
+P: 1702::0012 # Sky Select Info||Sky Select
+P: 1702::00FB # Sky Select 1||Sky Select
+P: 1702::0105 # Sky Select 2||Sky Select
+P: 1702::010F # Sky Select 3||Sky Select
+P: 1702::0119 # Sky Select 4||Sky Select
+P: 1702::0123 # Sky Select 5||Sky Select
+P: 1702::012D # Sky Select 6||Sky Select
+P: 1702::0137 # Sky Select 7||Sky Select
+P: 1702::0141 # Sky Select 8||Sky Select
+P: 1702::014B # Sky Select 9||Sky Select
+P: 1702::00FE # Sky Select Event A||Sky Select
+P: 1702::0108 # Sky Select Event B||Sky Select
+##########  Sky Select HD #################
+P: 1702::0078 # Sky Select HD||Sky Select
+P: 1702::0079 # Blue Movie Nights HD||Sky Erotik
+##########  Sky Sonstige  #################
+P: 1702::003B # sportdigital||Sky sonstige
+P: 1702::0201 # Blue Movie Info||Sky Erotik
+P: 1702::0159 # Blue Movie 1||Sky Erotik
+P: 1702::0163 # Blue Movie 2||Sky Erotik
+P: 1702::016D # Blue Movie 3||Sky Erotik
+
+##############################   HDplus via V13 #################
+P: 1702::5273 # HDplus|Comedy Central HD
+P: 1702::5273 # HDplus|Nick HD
+P: 1702::5274 # HDplus|N24 HD
+P: 1702::157F # HDplus|Deluxe Music HD
+P: 1702::EF10 # HDplus|RTL HD
+P: 1702::EF11 # HDplus|Vox HD
+P: 1702::EF14 # HDplus|Sport 1 HD
+P: 1702::EF15 # HDplus|RTL 2 HD
+P: 1702::2E9B # HDplus|Super RTL HD
+P: 1702::EF74 # HDplus|Sat 1 HD
+P: 1702::EF75 # HDplus|Prosieben HD
+P: 1702::EF76 # HDplus|Kabel 1 HD
+P: 1702::EF77 # HDplus|Sixx HD
+P: 1702::1519 # HDplus|Tele 5 HD
+P: 1702::151A # HDplus|DMAX HD
+				

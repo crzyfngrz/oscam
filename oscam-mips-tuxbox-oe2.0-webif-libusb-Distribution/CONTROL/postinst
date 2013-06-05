@@ -1,0 +1,7 @@
+#!/bin/sh
+echo "*************************************"
+echo "* Oscam_libusb installiert!         *"
+echo "* Oscam_libusb kann nun im          *"
+echo "* CI/Softcam-Menue gestartet werden *"
+echo "*************************************"
+exit 0
