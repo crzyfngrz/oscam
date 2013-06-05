@@ -1,23 +1,29 @@
 # oscam.server #
+# Read more: http://www.streamboard.tv/svn/oscam/trunk/Distribution/doc/example/oscam.server
 
 [reader]
-label                         = V13
-enable                        = 1
+label                         = orf
+protocol                      = constcw
+device                        = /usr/keys/SoftCam.Keys
+caid                          = 0D05
+ident                         = 0D05:000004,000010,000000
+group                         = 3
+
+[reader]
+label                         = v13
 protocol                      = internal
 device                        = /dev/sci0
-key                           = 0102030405060708091011121314
 caid                          = 09C4
 boxid                         = 12345678
-ins7e11                       = 13
+ins7e11                       = 12
 detect                        = cd
 mhz                           = 368
 cardmhz                       = 368
-ident                         = 09C4:000000
 group                         = 1
-emmcache                      = 1,1,2
+emmcache                      = 1,3,2
 
 [reader]
-label                         = V14
+label                         = v14
 enable                        = 0
 protocol                      = internal
 device                        = /dev/sci0
@@ -26,32 +32,6 @@ boxid                         = 12345678
 detect                        = cd
 mhz                           = 357
 cardmhz                       = 357
-group                         = 1
-emmcache                      = 1,3,2
-
-[reader]
-label                         = S02
-enable                        = 0
-protocol                      = internal
-device                        = /dev/sci0
-caid                          = 1702
-detect                        = cd
-mhz                           = 600
-cardmhz                       = 600
-group                         = 1
-emmcache                      = 1,3,2
-
-[reader]
-label                         = G02
-enable                        = 0
-protocol                      = internal
-device                        = /dev/sci0
-caid                          = 09C7
-boxid                         = 12345678
-boxkey                        = 1122334455667788
-detect                        = cd
-mhz                           = 369
-cardmhz                       = 369
 group                         = 1
 emmcache                      = 1,3,2
 
@@ -69,6 +49,39 @@ group                         = 1
 emmcache                      = 1,3,2
 
 [reader]
+label                         = orf
+enable                        = 0
+protocol                      = internal
+device                        = /dev/sci0
+caid                          = 0D05
+detect                        = cd
+group                         = 1
+emmcache                      = 1,3,2
+deprecated                    = 1
+
+[reader]
+label                         = s02
+enable                        = 0
+protocol                      = internal
+device                        = /dev/sci0
+caid                          = 1702
+detect                        = cd
+mhz                           = 600
+cardmhz                       = 600
+group                         = 1
+emmcache                      = 1,3,2
+
+[reader]
+label                         = srg
+enable                        = 0
+protocol                      = internal
+device                        = /dev/sci0
+caid                          = 0500
+detect                        = cd
+group                         = 1
+emmcache                      = 1,3,2
+
+[reader]
 label                         = hdplusblack
 enable                        = 0
 protocol                      = internal
@@ -82,27 +95,16 @@ group                         = 1
 emmcache                      = 1,3,2
 
 [reader]
-label                         = ORF
+label                         = g02
 enable                        = 0
 protocol                      = internal
 device                        = /dev/sci0
-caid                          = 0D05
+caid                          = 09C7
+boxid                         = 12345678
+boxkey                        = 1122334455667788
 detect                        = cd
-mhz                           = 357
-cardmhz                       = 357
-group                         = 1
-emmcache                      = 1,3,2
-deprecated                    = 1
-
-[reader]
-label                         = SRG
-enable                        = 0
-protocol                      = internal
-device                        = /dev/sci0
-caid                          = 0500
-detect                        = cd
-mhz                           = 357
-cardmhz                       = 357
+mhz                           = 369
+cardmhz                       = 369
 group                         = 1
 emmcache                      = 1,3,2
 
@@ -115,3 +117,4 @@ user                          = giga
 password                      = blue
 reconnecttimeout              = 120
 group                         = 1
+
